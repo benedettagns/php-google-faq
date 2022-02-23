@@ -62,7 +62,7 @@ $faq = [
         'answer' => 'Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda 
             gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai 
             trascorso più tempo nell\'ultimo anno.
-
+            
             I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe 
             occorrere circa un anno per aggiornare l\'associazione del paese.
             
@@ -103,6 +103,9 @@ $faq = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -126,7 +129,7 @@ $faq = [
 
         <?php 
         foreach($faq as $key => $value) {
-            echo "<h1>" . $value['title'] . "</h1>"; 
+            echo "<h2>" . $value['title'] . "</h2>"; 
             echo "<p>" . $value['answer'] . "</p>";
         }
         ?>
